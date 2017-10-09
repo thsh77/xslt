@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?oxygen RNGSchema="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader type="text">
+      <fileDesc>
+         <titleStmt>
+            <title>Diplomatarium Danicum</title>
+            <editor>
+               <name xml:id="nil">
+                  <persName>
+                     <forename>nil</forename>
+                     <surname>nil</surname>
+                  </persName>
+               </name>
+            </editor>
+            <funder>Carlsbergfondet</funder>
+         </titleStmt>
+         <extent>Base text, number of words: <num n="words">2</num>, paragraphs: <num n="paragraphs">1</num>. Translation, number of words: <num n="words">1</num>, paragraphs: <num n="paragraphs">1</num>
+         </extent>
+         <publicationStmt>
+            <publisher>Danske Sprog- og Litteraturselskab</publisher>
+            <pubPlace>København</pubPlace>
+            <date>2017</date>
+            <idno type="dd">99999999999</idno>
+            <idno type="isbn">nil</idno>
+            <availability status="restricted">
+               <ab>Copyright © 2017, Danske Sprog- og
+                                Litteraturselskab</ab>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="nil">
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>nil</settlement>
+                        <repository>nil</repository>
+                        <collection>nil</collection>
+                        <idno>nil</idno>
+                        <msName>nil</msName>
+                     </msIdentifier>
+                     <physDesc>
+                        <objectDesc>
+                           <supportDesc material="nil">
+                              <support>
+                                 <ab>nil</ab>
+                              </support>
+                              <extent>
+                                 <dimensions unit="cm">
+                                    <height>99999999 (plica: 99999999)</height>
+                                    <width>99999999</width>
+                                 </dimensions>
+                              </extent>
+                              <condition>
+                                 <ab>nil</ab>
+                              </condition>
+                           </supportDesc>
+                           <layoutDesc>
+                              <ab>nil</ab>
+                           </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                           <handNote>
+                              <ab>nil</ab>
+                           </handNote>
+                        </handDesc>
+                        <additions>
+                           <ab/>
+                        </additions>
+                        <sealDesc>
+                           <seal n="99999999" type="nil">
+                              <ab>nil, <ref>nil</ref>
+                              </ab>
+                           </seal>
+                        </sealDesc>
+                     </physDesc>
+                     <history>
+                        <ab>nil</ab>
+                     </history>
+                  </msDesc>
+               </witness>
+               <witness xml:id="nil">
+                  <msDesc>
+                     <msIdentifier>
+                        <settlement>nil</settlement>
+                        <repository>nil</repository>
+                        <collection>nil</collection>
+                        <idno>nil</idno>
+                        <msName>nil</msName>
+                     </msIdentifier>
+                     <physDesc>
+                        <objectDesc>
+                           <supportDesc material="nil">
+                              <support>
+                                 <ab>nil</ab>
+                              </support>
+                              <extent>
+                                 <dimensions unit="cm">
+                                    <height>99999999 (plica: 99999999)</height>
+                                    <width>99999999</width>
+                                 </dimensions>
+                              </extent>
+                              <condition>
+                                 <ab>nil</ab>
+                              </condition>
+                           </supportDesc>
+                           <layoutDesc>
+                              <ab>nil</ab>
+                           </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                           <handNote>
+                              <ab>nil</ab>
+                           </handNote>
+                        </handDesc>
+                        <additions>
+                           <ab>nilß</ab>
+                        </additions>
+                        <sealDesc>
+                           <seal n="99999999" type="nil">
+                              <ab>nil, <ref>nil</ref>
+                              </ab>
+                           </seal>
+                        </sealDesc>
+                     </physDesc>
+                     <history>
+                        <ab>nil</ab>
+                     </history>
+                  </msDesc>
+               </witness>
+            </listWit>
+            <listBibl>
+               <bibl>første</bibl>
+               <bibl>anden</bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <samplingDecl>
+            <ab>
+               <ref>nil</ref>. nil.</ab>
+         </samplingDecl>
+         <projectDesc>
+            <ab>DD-5</ab>
+         </projectDesc>
+         <appInfo>
+            <application xml:id="app_nil"
+                         type="nil"
+                         subtype="nil"
+                         ident="nil"
+                         version="99999999">
+               <desc>nil</desc>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <date when="99999999"
+                  notBefore="99999999"
+                  notAfter="99999999"
+                  cert="nil"> 
+               <note>nil</note>
+            </date>
+            <placeName cert="unknown">nil</placeName>
+         </creation>
+         <langUsage>
+            <language ident="gsv">Hovedsprog: gammelsvensk. </language>
+         </langUsage>
+         <abstract>
+            <ab>Første</ab>
+            <ab>Anden</ab>
+         </abstract>
+      </profileDesc>
+      <revisionDesc>
+         <change when="99999999" who="#nil">Filen etableret af #nil 99999999. </change>
+         <change when="99999999" who="#nil">Kladde: 1. korrektur mangler. </change>
+         <change when="99999999" who="#nil">Kladde: 2. korrektur mangler. </change>
+         <change when="99999999" who="#nil">Kladde: 3. korrektur mangler. </change>
+      </revisionDesc>
+   </teiHeader>
+   <facsimile>
+      <graphic url="nil"/>
+   </facsimile>
+   <text>
+      <body>
+         <div xml:lang="gsv">
+            <p n="a#1">hej <ref target="12340101001">123</ref> du</p>
+         </div>
+         <div xml:lang="da">
+            <p n="b#1">nil</p>
+         </div>
+      </body>
+   </text>
+</TEI>

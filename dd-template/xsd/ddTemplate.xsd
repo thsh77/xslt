@@ -1,0 +1,818 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:documentation>Licensed by Thomas Hansen under the Creative Commons Attribution-Share Alike
+      3.0 United States license. You are free to copy, distribute, transmit, and remix this work,
+      provided you attribute the work to Thomas Hansen as the original author and reference the
+      Society for Danish Language and Literature [http://dsl.dk] for the work. If you alter,
+      transform, or build upon this work, you may distribute the resulting work only under the same,
+      similar or a compatible license. Any of the above conditions can be waived if you get
+      permission from the copyright holder. For any reuse or distribution, you must make clear to
+      others the license terms of this work. The best way to do this is with a link to the license
+      [http://creativecommons.org/licenses/by-sa/3.0/deed.en].</xs:documentation>
+    <xs:documentation>This schema (ddTemplate.xsd) defines the do's and dont's of DD texts. It is
+      meant as a (simple) interface to the full-blown TEI P5-version. The values are mapped to the
+      TEI version and instances of the schema may be converted by means of the
+      ddTemplateConversion.xsl. Copyright Thomas Hansen and the Society for Danish Language and
+      Literature 2010. </xs:documentation>
+  </xs:annotation>
+  <xs:element name="ddTemplate">
+    <xs:annotation>
+      <xs:documentation>The ddtemplate is a user interface for creating texts for the Diplomatarium
+        Danicum text archive</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="editorInitials" type="editorInitialsType" minOccurs="1"
+          maxOccurs="unbounded" default="nil">
+          <xs:annotation>
+            <xs:documentation>The editorInitials takes as its value a string of 2-3
+              characters</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="textId" type="textIdType" default="99999999999" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="revision" type="revisionType"/>
+        <xs:element name="textCreationTimeEarliest" type="textCreationTimeType" default="99999999"/>
+        <xs:element name="textCreationTimeLatest" type="textCreationTimeType" default="99999999"/>
+        <xs:element name="textCreationTimeCertainty" type="certaintyType" default="nil"/>
+        <xs:element name="textCreationTimeNote" type="noteType" default="empty"/>
+        <xs:element name="textCreationPlace" type="xs:string" default="nil"/>
+        <xs:element name="textCreationPlaceCertainty" type="certaintyType" default="nil"/>
+        <xs:element name="summaryText" type="summaryType" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element name="witness" type="witnessType" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element name="listBibl" type="listBiblType" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="samplingMethod" type="samplingMethodType" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="textLanguage" type="textLanguageType" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element name="text" type="textType" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="translation" type="translationType" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="revisionType">
+    <xs:sequence>
+      <xs:element name="established" type="revisionInfoType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="proofFirst" type="revisionInfoType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="proofSecond" type="revisionInfoType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="proofThird" type="revisionInfoType" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="witnessType">
+    <xs:sequence>
+      <xs:element name="witnessSigil" type="witnessSigilType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="archivePlaceName" type="xs:string" minOccurs="1" maxOccurs="1" default="nil"/>
+      <xs:element name="archiveName" type="xs:string" minOccurs="1" maxOccurs="1" default="nil"/>
+      <xs:element name="collectionName" type="xs:string" minOccurs="1" maxOccurs="1" default="nil"/>
+      <xs:element name="inventoryNumber" type="xs:string" minOccurs="1" maxOccurs="1" default="nil"/>
+      <xs:element name="manuscriptName" type="xs:string" minOccurs="1" maxOccurs="1" default="nil"/>
+      <xs:element name="manuscriptMaterial" type="manuscriptMaterialType" minOccurs="1"
+        maxOccurs="1" default="nil"/>
+      <xs:element name="manuscriptHeight" type="manuscriptDimensionsType" minOccurs="1"
+        maxOccurs="1"/>
+      <xs:element name="manuscriptWidth" type="manuscriptDimensionsType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="manuscriptPlica" type="manuscriptPlicaType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="conditionDescription" type="xs:string" minOccurs="1" maxOccurs="1"
+        default="nil"/>
+      <xs:element name="layoutDescription" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="handDescription" type="xs:string" minOccurs="1" maxOccurs="1" default="nil"/>
+      <xs:element name="additionsToText" type="additionsToTextType" minOccurs="1" maxOccurs="1"
+        default="nil"/>
+      <xs:element name="seal" type="sealType" minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element name="witnessHistory" type="witnessHistoryType" minOccurs="1" maxOccurs="1"
+        default="nil"/>
+      <!--<xs:element name="filiationDescription" type="filiationDescriptionType" minOccurs="1" maxOccurs="1"/>-->
+      <!--<xs:element name="bibliographicEntry" type="xs:string" minOccurs="1" maxOccurs="unbounded"
+        default="nil"/>-->
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="samplingMethodType">
+    <xs:sequence>
+      <xs:element name="textCompleteness" type="textCompletenessType" minOccurs="1" maxOccurs="1"
+        default="nil"/>
+      <xs:element name="sourceSigil" type="witnessSigilType" minOccurs="1" maxOccurs="1"
+        default="nil"/>
+      <xs:element name="samplingNote" type="xs:string" minOccurs="1" maxOccurs="1" default="nil"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sealType">
+    <xs:sequence>
+      <xs:element name="sealNumber" type="sealNumberType" minOccurs="1" maxOccurs="1"
+        default="99999999"/>
+      <xs:element name="sealStatus" type="sealStatusType" minOccurs="1" maxOccurs="1" default="nil"/>
+      <!--<xs:element name="sigillant" type="xs:string" minOccurs="1" maxOccurs="1" default="nil"/>-->
+      <!--<xs:element name="sealColour" type="sealColourType" minOccurs="1" maxOccurs="1" default="nil"/>-->
+      <!--<xs:element name="sealMaterial" type="xs:string" minOccurs="1" maxOccurs="1" default="nil"/>-->
+      <!--<xs:element name="sealFastener" type="sealFastenerType" minOccurs="1" maxOccurs="1"
+      default="nil"/>-->
+      <xs:element name="sealDescription" type="sealDescriptionType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="sealReferenceWork" type="xs:string" minOccurs="1" maxOccurs="1"
+        default="nil"/>
+    </xs:sequence>
+  </xs:complexType>
+  <!--Simple types-->
+  <xs:simpleType name="editorInitialsType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">The editor initials is a shorthand way of referring to the
+        editors</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="nil">
+        <xs:annotation>
+          <xs:documentation>Info has not been determined yet</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="alk">
+        <xs:annotation>
+          <xs:documentation>Anders Leegaard Knudsen</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="jon">
+        <xs:annotation>
+          <xs:documentation>Jonathan Adams</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="maria.arvidsson">
+        <xs:annotation>
+          <xs:documentation>Maria Arvidsson</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="pbh">
+        <xs:annotation>
+          <xs:documentation>Peter Brun Hansen</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="mh">
+        <xs:annotation>
+          <xs:documentation>Markus Hedemann</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="th">
+        <xs:annotation>
+          <xs:documentation>Thomas Hansen</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="vw">
+        <xs:annotation>
+          <xs:documentation>Vibeke Winge</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="certaintyType">
+    <xs:annotation>
+      <xs:documentation>(certainty) signifies the degree of certainty ascribed to a date or a
+        place.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="empty">
+        <xs:annotation>
+          <xs:documentation>Info is irrelevant, non-existent, or undeterminable</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="nil">
+        <xs:annotation>
+          <xs:documentation>Info has not been determined yet</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="high">
+        <xs:annotation>
+          <xs:documentation>Certainty: high - the place or the date is mentioned explicitely in the
+            source text</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="low">
+        <xs:annotation>
+          <xs:documentation>Certainty: low - the place or the date is NOT mentioned explicitely in
+            the source text</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="expansionType">
+    <xs:annotation>
+      <xs:documentation>(editorial expansion) contains a sequence of letters added by an editor or
+        transcriber when expanding an abbreviation.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="figureDescriptionType">
+    <xs:annotation>
+      <xs:documentation>(figure description) contains a description of a graphic element in a
+        manuscript.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="manuscriptDimensionsType">
+    <xs:restriction base="xs:decimal">
+      <xs:pattern value="99999999">
+        <xs:annotation>
+          <xs:documentation>Info has not been determined yet</xs:documentation>
+        </xs:annotation>
+      </xs:pattern>
+      <xs:pattern value="0">
+        <xs:annotation>
+          <xs:documentation>Info is non-existent</xs:documentation>
+        </xs:annotation>
+      </xs:pattern>
+      <xs:pattern value="[1-9]"/>
+      <xs:pattern value="[1-9][0-9]"/>
+      <xs:pattern value="[0-9].[1-9]"/>
+      <xs:pattern value="[1-9][0-9].[1-9]"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="manuscriptPlicaType">
+    <xs:restriction base="xs:decimal">
+      <xs:pattern value="99999999">
+        <xs:annotation>
+          <xs:documentation>Info has not been determined yet</xs:documentation>
+        </xs:annotation>
+      </xs:pattern>
+      <xs:pattern value="0">
+        <xs:annotation>
+          <xs:documentation>Info is non-existent</xs:documentation>
+        </xs:annotation>
+      </xs:pattern>
+      <xs:pattern value="[1-9]"/>
+      <xs:pattern value="[1-9][0-9]"/>
+      <xs:pattern value="[0-9].[1-9]"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="referenceType">
+    <xs:annotation>
+      <xs:documentation>(reference) points the reader elsewhere.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="target" type="targetType"></xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="targetType">
+    <xs:restriction base="xs:integer">
+      <xs:pattern value="[0-1][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"></xs:pattern>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="sealNumberType">
+    <xs:restriction base="xs:integer">
+      <xs:pattern value="99999999">
+        <xs:annotation>
+          <xs:documentation>Info has not been determined yet</xs:documentation>
+        </xs:annotation>
+      </xs:pattern>
+      <xs:pattern value="0">
+        <xs:annotation>
+          <xs:documentation>Info is non-existent</xs:documentation>
+        </xs:annotation>
+      </xs:pattern>
+      <xs:pattern value="[1-9]"/>
+      <xs:pattern value="[1-9][0-9]"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="sealStatusType">
+    <xs:annotation>
+      <xs:documentation>If a document has, or has had seals appended to it, seal status indicates
+        the current presence or absence of such seals</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="nil">
+        <xs:annotation>
+          <xs:documentation>Info has not been determined yet</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="empty">
+        <xs:annotation>
+          <xs:documentation>Info is irrelevant, non-existent, or undeterminable</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="missing">
+        <xs:annotation>
+          <xs:documentation>The seal is missing</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="pendant">
+        <xs:annotation>
+          <xs:documentation>The seal is pendant</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="textCompletenessType">
+    <xs:annotation>
+      <xs:documentation/>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="nil">
+        <xs:annotation>
+          <xs:documentation>Info has not been determined yet</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="version">
+        <xs:annotation>
+          <xs:documentation>The text is transmitted in extenso</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="excerpt">
+        <xs:annotation>
+          <xs:documentation>Part of the text is transmitted</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="textCreationTimeType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="99999999">
+        <xs:annotation>
+          <xs:documentation>Info has not been determined yet</xs:documentation>
+        </xs:annotation>
+      </xs:pattern>
+      <xs:pattern value="[1][4][0-9][0-9]-[0-1][0-9]-[0-9][0-9]"/>
+      <xs:pattern value="[1][4][0-9][0-9]-[0-1][0-9]"/>
+      <xs:pattern value="[1][4][0-9][0-9]"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="textIdType">
+    <xs:restriction base="xs:integer">
+      <xs:pattern value="99999999999">
+        <xs:annotation>
+          <xs:documentation>Info has not been determined yet</xs:documentation>
+        </xs:annotation>
+      </xs:pattern>
+      <xs:pattern value="[1][4][0-9][0-9][0-1][0-9][0-9][0-9][0-9][0-9][0-9]"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="textLanguageType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="gda">
+        <xs:annotation>
+          <xs:documentation>Gammeldansk</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="gmh">
+        <xs:annotation>
+          <xs:documentation>Middle High German</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="gml">
+        <xs:annotation>
+          <xs:documentation>Middle Low German</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="gsv">
+        <xs:annotation>
+          <xs:documentation>Gammelsvensk</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="la">
+        <xs:annotation>
+          <xs:documentation>Latin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="xda">
+        <xs:annotation>
+          <xs:documentation>Ældre nydansk</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="xno">
+        <xs:annotation>
+          <xs:documentation>Anglo-Norman</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="nil"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="witnessSigilType">
+    <xs:restriction base="xs:token">
+      <xs:pattern value="nil">
+        <xs:annotation>
+          <xs:documentation>Info has not been determined yet</xs:documentation>
+        </xs:annotation>
+      </xs:pattern>
+      <xs:pattern value="[A-Z]"/>
+      <xs:pattern value="[A-Z][a-z]"/>
+      <xs:pattern value="[A-Z][a-z][1-9]"/>
+      <xs:pattern value="[A-Z][a-z][1-9][a-z]"/>
+      <xs:pattern value="[A-Z][a-z][1-9][a-z][1-9]"/>
+      <xs:pattern value="[a-z]"/>
+      <xs:pattern value="[a-z][a-z]"/>
+      <xs:pattern value="[a-z][a-z][1-9]"/>
+      <xs:pattern value="[a-z][a-z][1-9][a-z]"/>
+      <xs:pattern value="[a-z][a-z][1-9][a-z][1-9]"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="manuscriptMaterialType">
+    <xs:annotation>
+      <xs:documentation>Manuscript material states whether the text is written on parchment, paper,
+        or a mixture of the two</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="nil">
+        <xs:annotation>
+          <xs:documentation>Info has not been determined yet</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="empty">
+        <xs:annotation>
+          <xs:documentation>There is no information available to decide the manuscript
+            material</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="parch">
+        <xs:annotation>
+          <xs:documentation>The text is written on parchment</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="paper">
+        <xs:annotation>
+          <xs:documentation>The text is written on paper</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="mixed">
+        <xs:annotation>
+          <xs:documentation>The text is written partly on parchment, partly on
+            paper</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- Complex types (mixed) -->
+  <xs:complexType name="additionsToTextType" mixed="true">
+    <xs:sequence>
+      <xs:element name="q" type="qType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="appType">
+    <xs:annotation>
+      <xs:documentation>An apparatus criticus entry may contain one lem (lemma) element, and an
+        infinite number of rdg (reading) elements</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="lem" type="lemType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="rdg" type="rdgType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="biblType" mixed="true">
+    <xs:annotation>
+      <xs:documentation/>
+    </xs:annotation>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="hi" type="hiType"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="citType">
+    <xs:annotation>
+      <xs:documentation>(cited quotation) contains a quotation from some other document, together
+        with a bibliographic reference to its source.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="quote" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="bibl" type="biblType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="damageType" mixed="true">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="ex" type="expansionType"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dateType" mixed="true">
+    <xs:attribute name="when" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="99999999">
+            <xs:annotation>
+              <xs:documentation>Info has not been determined yet</xs:documentation>
+            </xs:annotation>
+          </xs:pattern>
+          <xs:pattern value="[1][4][0-9][0-9]-[0-1][0-9]-[0-9][0-9]"/>
+          <xs:pattern value="[1][4][0-0][0-9]-[0-1][0-9]"/>
+          <xs:pattern value="[1][4][0-9][0-9]"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="filiationDescriptionType" mixed="true">
+    <xs:annotation>
+      <xs:documentation>contains information concerning the manuscript's filiation, i.e. its
+        relationship to other surviving manuscripts of the same text, its protographs, antigraphs
+        and apographs.</xs:documentation>
+    </xs:annotation>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="q" type="qType"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="hiType" mixed="true">
+    <xs:annotation>
+      <xs:documentation>Highlighted text refers to text that is written below the line (subscript)
+        or over the line (suprascript)</xs:documentation>
+    </xs:annotation>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="ex" type="expansionType"/>
+      <xs:element name="damage" type="damageType"/>
+      <xs:element name="supplied" type="suppliedType"/>
+    </xs:choice>
+    <xs:attribute name="rend" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="sub">
+            <xs:annotation>
+              <xs:documentation>The text rendering is subscript</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="sup">
+            <xs:annotation>
+              <xs:documentation>The text rendering is suprascript</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="itemType" mixed="true">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="note" type="noteType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="listType" mixed="true">
+    <xs:annotation>
+      <xs:documentation> (list) contains any sequence of items organized as a
+        list</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="item" type="itemType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="lemType" mixed="true">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="damage" type="damageType"/>
+      <xs:element name="ex" type="expansionType"/>
+      <xs:element name="supplied" type="suppliedType"/>
+      <xs:element name="persName" type="persNameType"/>
+      <xs:element name="placeName" type="placeNameType"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="noteType" mixed="true">
+    <xs:annotation>
+      <xs:documentation> contains the editor's note or annotation</xs:documentation>
+    </xs:annotation>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+<xs:element name="em" type="xs:string"/>
+<xs:element name="hi" type="hiType"/> 
+<xs:element name="q" type="qType"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="pType" mixed="true">
+    <xs:annotation>
+      <xs:documentation>paragraph in prose</xs:documentation>
+    </xs:annotation>
+    <!-- Denne sekvens tillader alle elementer under p
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+      <xs:any processContents="skip" />
+      </xs:sequence>-->
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="app" type="appType"/>
+      <xs:element name="cit" type="citType"/>
+      <xs:element name="damage" type="damageType"/>
+      <xs:element name="date" type="dateType"/>
+      <xs:element name="ex" type="expansionType"/>
+      <xs:element name="figureDescription" type="figureDescriptionType"/>
+      <xs:element name="hi" type="hiType"/>
+      <xs:element name="list" type="listType"/>
+      <xs:element name="note" type="noteType"/>
+      <xs:element name="persName" type="persNameType"/>
+      <xs:element name="placeName" type="placeNameType"/>
+      <xs:element name="ref" type="referenceType"/>
+      <xs:element name="supplied" type="suppliedType"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="persNameType" mixed="true">
+    <xs:annotation>
+      <xs:documentation>person name</xs:documentation>
+    </xs:annotation>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="app" type="appType"/>
+      <xs:element name="cit" type="citType"/>
+      <xs:element name="damage" type="damageType"/>
+      <xs:element name="date" type="dateType"/>
+      <xs:element name="ex" type="expansionType"/>
+      <xs:element name="figureDescription" type="figureDescriptionType"/>
+      <xs:element name="hi" type="hiType"/>
+      <xs:element name="list" type="listType"/>
+      <xs:element name="note" type="noteType"/>
+      <xs:element name="ref" type="referenceType"/>
+      <xs:element name="supplied" type="suppliedType"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="placeNameType" mixed="true">
+    <xs:annotation>
+      <xs:documentation>person name</xs:documentation>
+    </xs:annotation>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="app" type="appType"/>
+      <xs:element name="cit" type="citType"/>
+      <xs:element name="damage" type="damageType"/>
+      <xs:element name="date" type="dateType"/>
+      <xs:element name="ex" type="expansionType"/>
+      <xs:element name="figureDescription" type="figureDescriptionType"/>
+      <xs:element name="hi" type="hiType"/>
+      <xs:element name="list" type="listType"/>
+      <xs:element name="note" type="noteType"/>
+      <xs:element name="ref" type="referenceType"/>
+      <xs:element name="supplied" type="suppliedType"/>
+    </xs:choice>
+  </xs:complexType>
+  
+  <xs:complexType name="qType" mixed="true">
+    <xs:annotation>
+      <xs:documentation>(quote) is used when quoting any type of text in a
+        manuscript.</xs:documentation>
+    </xs:annotation>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="damage" type="damageType"/>
+      <xs:element name="date" type="dateType"/>
+      <xs:element name="ex" type="expansionType"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="revisionInfoType">
+    <xs:attribute name="who" default="#nil">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="#nil">
+            <xs:annotation>
+              <xs:documentation>Info has not been determined yet</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="#alk">
+            <xs:annotation>
+              <xs:documentation>Anders Leegaard Knudsen</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="#jon">
+            <xs:annotation>
+              <xs:documentation>Jonathan Adams</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="#mh">
+            <xs:annotation>
+              <xs:documentation>Markus Hedemann</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="#maria.arvidsson">
+            <xs:annotation>
+              <xs:documentation>Maria Arvidsson</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="#pbh">
+            <xs:annotation>
+              <xs:documentation>Peter Brun Hansen</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="#th">
+            <xs:annotation>
+              <xs:documentation>Thomas Hansen</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="when" default="99999999">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="99999999">
+            <xs:annotation>
+              <xs:documentation>Info has not been determined yet</xs:documentation>
+            </xs:annotation>
+          </xs:pattern>
+          <xs:pattern value="[2][0][1][0-9]-[0-1][0-9]-[0-9][0-9]"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="rdgType" mixed="true">
+    <xs:annotation>
+      <xs:documentation>A rdg (reading) element may capture (1) a manuscript reading - specified by
+        the witness (wit) attribute; (2) an editor's conjecture - specified by the responsibility
+        (resp) attribute </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="q" type="qType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="resp">
+      <xs:annotation>
+        <xs:documentation>(resp) indicates the editor responsible for the reading</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="#alk">
+            <xs:annotation>
+              <xs:documentation>Anders Leegaard Knudsen</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="#jon">
+            <xs:annotation>
+              <xs:documentation>Jonathan Adams</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="#mh">
+            <xs:annotation>
+              <xs:documentation>Markus Hedemann</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="#th">
+            <xs:annotation>
+              <xs:documentation>Thomas Hansen</xs:documentation>
+            </xs:annotation>
+          </xs:enumeration>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="wit">
+      <xs:annotation>
+        <xs:documentation>(wit) identifies the text witness containing the
+          reading</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="#A"/>
+          <xs:enumeration value="#Aa"/>
+          <xs:enumeration value="#Aa1"/>
+          <xs:enumeration value="#Aa1a"/>
+          <xs:enumeration value="#Aa1a1"/>
+          <xs:enumeration value="#Ab"/>
+          <xs:enumeration value="#Ab1"/>
+          <xs:enumeration value="#Ab1a"/>
+          <xs:enumeration value="#Ab1a1"/>
+          <xs:enumeration value="#B"/>
+          <xs:enumeration value="#Ba"/>
+          <xs:enumeration value="#Ba1"/>
+          <xs:enumeration value="#Ba1a"/>
+          <xs:enumeration value="#Ba1a1"/>
+          <xs:enumeration value="#Bb"/>
+          <xs:enumeration value="#Bb1"/>
+          <xs:enumeration value="#Bb1a"/>
+          <xs:enumeration value="#Bb1a1"/>
+          <xs:enumeration value="#C"/>
+          <xs:enumeration value="#Ca"/>
+          <xs:enumeration value="#Ca1"/>
+          <xs:enumeration value="#Ca1a"/>
+          <xs:enumeration value="#Ca1a1"/>
+          <xs:enumeration value="#Cb"/>
+          <xs:enumeration value="#Cb1"/>
+          <xs:enumeration value="#Cb1a"/>
+          <xs:enumeration value="#Cb1a1"/>
+          <xs:enumeration value="#D"/>
+          <xs:enumeration value="#Da"/>
+          <xs:enumeration value="#Da1"/>
+          <xs:enumeration value="#Da1a"/>
+          <xs:enumeration value="#Da1a1"/>
+          <xs:enumeration value="#Db"/>
+          <xs:enumeration value="#Db1"/>
+          <xs:enumeration value="#Db1a"/>
+          <xs:enumeration value="#Db1a1"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="sealDescriptionType" mixed="true">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="damage" type="damageType"/>
+      <xs:element name="ex" type="expansionType"/>
+      <xs:element name="q" type="qType"/>
+      <xs:element name="supplied" type="suppliedType"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="summaryType">
+    <xs:sequence>
+      <xs:element name="ab" type="pType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="suppliedType" mixed="true">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="ex" type="expansionType"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="textType" mixed="true">
+    <xs:sequence>
+      <xs:element name="p" type="pType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="translationType" mixed="true">
+    <xs:sequence>
+      <xs:element name="p" type="pType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="witnessHistoryType" mixed="true">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="hi" type="hiType"/>
+      <xs:element name="q" type="qType" minOccurs="0"/>
+      <xs:element name="em" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Emphasis</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="listBiblType">
+    <xs:sequence>
+      <xs:element name="bibl" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

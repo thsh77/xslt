@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!--<ddTemplate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/filebase/dipdan/dipred/dd-drb_5rk/xsd/ddTemplate.xsd">-->
+        <ddTemplate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/ddTemplate.xsd">
+        <editorInitials>nil</editorInitials>
+        <textId>99999999999</textId>
+        <revision>
+                <established who="#nil" when="99999999"/>
+                <proofFirst who="#nil" when="99999999"/>
+                <proofSecond who="#nil" when="99999999"/>
+                <proofThird who="#nil" when="99999999"/>
+        </revision>
+        <textCreationTimeEarliest>99999999</textCreationTimeEarliest>
+        <textCreationTimeLatest>99999999</textCreationTimeLatest>
+        <textCreationTimeCertainty>nil</textCreationTimeCertainty>
+        <textCreationTimeNote>nil</textCreationTimeNote>
+        <textCreationPlace>nil</textCreationPlace>
+        <textCreationPlaceCertainty>nil</textCreationPlaceCertainty>
+        <summaryText>
+                <ab>Første</ab>
+                <ab>Anden</ab>
+        </summaryText>
+        <witness>
+                <witnessSigil>nil</witnessSigil>
+                <archivePlaceName>nil</archivePlaceName>
+                <archiveName>nil</archiveName>
+                <collectionName>nil</collectionName>
+                <inventoryNumber>nil</inventoryNumber>
+                <manuscriptName>nil</manuscriptName>
+                <manuscriptMaterial>nil</manuscriptMaterial>
+                <manuscriptHeight>99999999</manuscriptHeight>
+                <manuscriptWidth>99999999</manuscriptWidth>
+                <manuscriptPlica>99999999</manuscriptPlica>
+                <conditionDescription>nil</conditionDescription>
+                <layoutDescription>nil</layoutDescription>
+                <handDescription>nil</handDescription>
+                <additionsToText></additionsToText>
+                <seal>
+                        <sealNumber>99999999</sealNumber>
+                        <sealStatus>nil</sealStatus>
+                        <sealDescription>nil</sealDescription>
+                        <sealReferenceWork>nil</sealReferenceWork>
+                </seal>
+                <witnessHistory>nil</witnessHistory>
+                <!--<filiationDescription>nil</filiationDescription>-->
+                <!--<bibliographicEntry>nil</bibliographicEntry>-->
+        </witness>
+                <witness>
+                        <witnessSigil>nil</witnessSigil>
+                        <archivePlaceName>nil</archivePlaceName>
+                        <archiveName>nil</archiveName>
+                        <collectionName>nil</collectionName>
+                        <inventoryNumber>nil</inventoryNumber>
+                        <manuscriptName>nil</manuscriptName>
+                        <manuscriptMaterial>nil</manuscriptMaterial>
+                        <manuscriptHeight>99999999</manuscriptHeight>
+                        <manuscriptWidth>99999999</manuscriptWidth>
+                        <manuscriptPlica>99999999</manuscriptPlica>
+                        <conditionDescription>nil</conditionDescription>
+                        <layoutDescription>nil</layoutDescription>
+                        <handDescription>nil</handDescription>
+                        <additionsToText>nilß</additionsToText>
+                        <seal>
+                                <sealNumber>99999999</sealNumber>
+                                <sealStatus>nil</sealStatus>
+                                <sealDescription>nil</sealDescription>
+                                <sealReferenceWork>nil</sealReferenceWork>
+                        </seal>
+                        <witnessHistory>nil</witnessHistory>
+                        <!--<filiationDescription>nil</filiationDescription>-->
+                        <!--<bibliographicEntry>nil</bibliographicEntry>-->
+                </witness>
+        <listBibl>
+                <bibl>første</bibl><bibl>anden</bibl>        </listBibl>
+        <samplingMethod>
+                <textCompleteness>nil</textCompleteness>
+                <sourceSigil>nil</sourceSigil>
+                <samplingNote>nil</samplingNote>
+        </samplingMethod>
+        <textLanguage>gsv</textLanguage>
+        <text>
+                <p>hej <ref target="12340101001">123</ref> du</p>
+        </text>
+        <translation>
+                <p>nil</p>
+        </translation>
+</ddTemplate>
