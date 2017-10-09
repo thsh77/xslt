@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Genereret fra DD-redaktionens opmaerkningsformat 11.06.2002 -->
+<!DOCTYPE DIPLOM SYSTEM "http://dsl.dk/dtd/dd.dtd">
+<?xml-stylesheet type="text/xsl" href="http://dsl.dk/xsl/dd-html.xsl"?>
+<DIPLOM>
+	<HOVED>
+		<KARTOTEK>16</KARTOTEK>
+		<RAEKKE>4</RAEKKE>
+		<BIND>12</BIND>
+		<LB.NR>226</LB.NR>
+		<DATUM>1411. 25. marts</DATUM>
+		<STED>Kolding</STED>
+	</HOVED>
+	<REGEST>Traktat mellem kong Erik, hertuginde Elisabeth af Slesvig og hendes børn, samt grev Henrik af Holsten om en 5-årig fred.</REGEST>
+	<DIPL.OPL>
+		<MANUS>
+			<ID>A</ID>
+			<OPL>RA. Slesvig 38 = ny kronol. rk. 2298.
+Perg. 59,5-62,5 × 34-35 (plica 5-5,5).
+Segl.
+1: Kong Eriks unionssekret af ufarvet voks, DKS. 62. 
+2: seglgrem.
+3-4: seglsnit.
+5: biskop Bos segl af ufarvet voks i perg.rem, DGS. 733.
+6: biskop Peder Lykkes segl af ufarvet voks i perg.rem, DGS. 813. 
+7-10: seglsnit.
+11: biskop Peders segl af ufarvet voks i perg.rem, DGS. 618. 
+12: biskop Laves segl af ufarvet voks i perg.rem, .
+13: seglsnit.
+14: seglrem m. påskrift <fh>Thomas Vitze</fh>n.
+15: Niels Ivarsens segl (Rosenkrans) af ufarvet voks i perg.rem, DAS. 1045.
+16: seglrem m. påskrift <fh>Ficke van Vitzen</fh>.
+17: seglrem m. påskrift <fh>Folmar Iac</fh>ob<fh>ss</fh>øn.
+18: seglsnit.
+19: seglrem m. påskrift <fh>Biorn Oleffs</fh>øn.
+20: seglrem m. påskrift <fh>N</fh>iels <fh>Brok</fh>.
+21: Andreas Jakobsens segl (Lunge) af ufarvet voks i perg.rem, DAS. 932.
+22-23: seglsnit.
+24: seglrem.
+25: Jakop Troelsens segl (Benderup) af ufarvet voks i perg.rem, AS. L i 27.
+26: seglrem m. påskrift <fh>Godscalk Bentss</fh>øn.
+27: Johan Skarpenbergs segl af ufarvet voks i perg.rem, DAS. 1082.
+28: seglsnit.
+29: seglrem m. påskrift <fh>Pe</fh>ter <fh>Mag</fh>nu<fh>ss</fh>øn.
+30: Niels Strangesens segl (Bild) af ufarvet voks i perg.rem, AS. L iv 4.
+31: seglrem m. påskrift <fh>Thure Stenss</fh>øn.
+32: Erik Nielsens segl (Gyldenstjerne) af ufarvet voks i perg.rem, AS. G xvi 8.
+33: seglrem m. påskrift <fh>Giord Giortss</fh>øn.
+34: seglrem m. påskrift <fh>Ion Litle</fh>.
+35: seglrem m. påskrift <fh>Otte Mychelst</fh>orp.
+36: seglrem m. påskrift <fh>N</fh>iels <fh>Krabbe</fh>.
+37: seglsnit.
+38: seglrem m. påskrift <fh>Thrwet Has</fh>.
+39: seglrem m. påskrift <fh>C</fh>hri<fh>st</fh>ier<fh>n Skram</fh>.
+40: Jens Nielsens segl (Løvenbalk) af ufarvet voks i perg.rem, AS. C xxxiv 1.
+41: seglrem.
+42: seglrem. m. påskrift <fh>Laur</fh>ens <fh>Hwas</fh>.
+43: seglrem m. påskrift <fh>Halward Findss</fh>øn.
+44-48 seglsnit.
+49: seglrem m. påskrift <fh>Ion Bing</fh>.
+50-51: seglsnit.
+52: Jens Eskildsens segl (Krumpen) af ufarvet voks i perg.rem, AS. I vii 2.
+53: seglsnit.
+54: seglrem m. påskrift <fh>N</fh>iels <fh>Ienss</fh>øn <fh>Tongæ</fh>.
+55: seglrem m. påskrift <fh>Christ</fh>ier<fh>n</fh>
+				<fh>Friis</fh>.
+56: seglrem m. påskrift <fh>Wolde</fh>ma<fh>r</fh>
+				<fh>Bydelsbak</fh>.
+57: Berneke Skinkels segl af ufarvet voks i perg.rem, DAS. 849.
+58: seglrem m. påskrift <fh>Luder Kabol</fh>.
+59: seglrem m. påskrift <fh>Olaff Hakenss</fh>øn.
+60: seglrem m. påskrift <fh>Knwt Bentss</fh>øn.
+61: seglrem m. påskrift <fh>Luder Lemb</fh>ek.
+62: seglrem m. påskrift <fh>H</fh>en<fh>ric</fh> .....
+63: seglrem m. påskrift <fh>Cla</fh>us <fh>Lembek</fh>.
+64-65: segsnit.
+66: seglrem m. påskrift <fh>H</fh>er <fh>Otte Sestede</fh>.
+67: seglrem m. påskrift <fh>H</fh>er <fh>Erik Kro</fh>m<fh>medik</fh>.
+68: seglrem m. påskrift <fh>Episcopus Lubicensis</fh>.
+69: seglrem.
+70: seglrem m. påskrift <fh>H</fh>er <fh>Benedictus Aneueld</fh>.
+71: seglrem m. påskrift <fh>H</fh>er <fh>Siuerd Sestede</fh>.
+72: seglsnit.
+73: seglrem.
+74: seglrem m. påskrift <fh>H</fh>er <fh>Herding Stake</fh>.
+75: seglrem m. påskrift <fh>H</fh>er <fh>Cla</fh>us <fh>Boekwold</fh>.
+76: seglrem m. påskrift <fh>H</fh>er <fh>Otte Wilberg</fh>.
+77: seglrem.
+78: seglsnit.
+79: seglrem m. påskrift <fh>H</fh>er <fh>Iohan Stake</fh>.
+80: seglsnit.
+81: seglrem m. påskrift <fh>H</fh>er <fh>Schakke Rantzow</fh>.
+82: seglrem m. påskrift <fh>H</fh>er <fh>Detleff Rixstorp</fh>.
+83: seglrem m. påskrift <fh>H</fh>er <fh>M</fh>a<fh>rq</fh>uard <fh>va</fh>n <fh>Siggem</fh>.
+84: seglrem m. påskrift <fh>H</fh>er <fh>Heneke Tralowe</fh>.
+85: seglrem m. påskrift <fh>H</fh>er <fh>Detleff va</fh>n <fh>Aneweld</fh>.
+86: seglrem m. påskrift <fh>H</fh>er <fh>Hertuig Heste</fh>n.
+87: seglrem m. påskrift <fh>H</fh>er <fh>Clawes Swaff</fh>.
+88: seglsnit.
+89: seglrem m. påskrift <fh>H</fh>er <fh>Henr</fh>ik <fh>Alwerstorp</fh>.
+90: seglsnit.
+91: seglrem m. påskrift <fh>Iohan Hummerbutel</fh>.
+92: seglrem m. påskrift <fh>Heneke Stake</fh>.
+93: seglrem m. påskrift <fh>Bert</fh>ra<fh>m Sabele</fh>.
+94: seglrem m. påskrift <fh>Marquard va</fh>n <fh>Qualen</fh>.
+95: seglrem.
+96: seglrem m. påskrift <fh>Volrat van Bookwolde</fh>.
+97: seglrem m. påskrift <fh>Henr</fh>ik <fh>Brochtorp</fh>.
+98: seglrem m. påskrift <fh>Woldem</fh>a<fh>r Breide</fh>.
+99: seglrem.
+100: seglrem m. påskrift <fh>Emeke Ratlowe</fh>.
+101: seglrem m. påskrift <fh>Henr</fh>ik <fh>va</fh>n <fh>Stöwe</fh>.
+102: seglrem m. påskrift <fh>Keye Rantzowe</fh>.
+103: seglrem m. påskrift <fh>M</fh>a<fh>rq</fh>uard <fh>Stake</fh>.
+104: seglrem m. påskrift <fh>Heneke Ratlowe</fh>.
+105: seglrem m. påskrift <fh>Godscalk Rantzowe</fh>.
+106: seglrem m. påskrift <fh>Henr</fh>ik <fh>Rantzowe</fh>.
+107: seglrem m. påskrift <fh>Borchart Krummedik</fh>.
+108: seglrem m. påskrift <fh>Luder Langelowe</fh>.
+109: seglrem m. påskrift <fh>Eggerd Gørse</fh>.
+110: seglrem m. påskrift <fh>Henr</fh>ik <fh>Küle</fh>.
+111: seglrem m. påskrift <fh>Cla</fh>us <fh>Ascheb</fh>er<fh>g</fh>.
+112: seglrem m. påskrift <fh>Detleff Walstorp</fh>.
+113: seglrem m. påskrift <fh>Clawes Rauen</fh>.
+114: seglrem m. påskrift <fh>Heneke Dosenrode</fh>.
+115: seglrem m. påskrift <fh>Cla</fh>us <fh>va</fh>n <fh>Tinen</fh>.
+116: seglrem m. påskrift <fh>Otte Meyn</fh>er<fh>storp</fh>.
+117: seglrem m. påskrift <fh>Marquard Breyde Iunior</fh>.
+På bagsiden påskriften <fh>Thet fredhæ b</fh>re<fh>ff som giwet war i Koldinghe
+etcetera ♦ Id so</fh>m <fh>the Holster skulde hawe haft. um frith mællo</fh>m
+<fh>Da</fh>n<fh>marc oc them/ oc tha sculde the haue giuet eet annet slicht i ge</fh>n
+<fh>i sa</fh>m<fh>me made</fh>.
+</OPL>
+		</MANUS>
+		<TRYK>Dipl. Flensborg. I 186; Sverges Traktater III 14 - Huitfeld IV 203 f. 638
+(<fh>i dansk oversættelse</fh>) Hvass, Meddelelser om Personer og Familier af
+Navnet Hvass III 111 nr. 23 (<fh>i udtog</fh>); Reg. Dan. nr. 3254; Rep. nr. 5143</TRYK>
+		<ANDET>Arkivregistranten af 1664 læg nr. 27 nævner, at dette
+brev er en transsumpt uden dog at angive dennes dato eller
+udsteder, hvilket rimeligvis beror på en misforståelse af
+notarialinstrumentet af 1414 om 1411. 24. marts (cf. nr. 224).</ANDET>
+	</DIPL.OPL>
+	<TEKST>
+		<SPALTE sprog="?">
+			<FORLAEG>Tekst efter A:</FORLAEG>
+			<ERKLAERING><KONGELIG><STAT><KONTRAKT>
+In godes namen amen ♦ Wy Erik myt godes gnaden. der rike
+Denm<fh>a</fh>rken. Sweden. Norweghen. der Goten vnde der Wende
+koni<fh>n</fh>g. vnde hertoghe to Pomere<fh>n</fh> vnde wi Elizabeth der
+sulue<fh>n</fh> gnade<fh>n</fh> hertogin<fh>n</fh>en to Sleswik. greuynne to Holste<fh>n</fh>
+to Storm<fh>er</fh>en vnde to Schowenborg vnde vnse kyndere vnde wy
+Henrik der suluen gnaden biscop to Osenbrugge. furstengreue
+to Holsten to Stormeren vnde to Schowenborg wy vorbenomed<fh>en</fh>
+mit vns<fh>en</fh> erue<fh>n</fh> vnde nakomelinge<fh>n</fh>. bekenne<fh>n</fh> vnde betughe<fh>n</fh> openbare in
+dessem breue/ dat wy vor vns vn<fh>de</fh> vnse erue<fh>n</fh> vnde nakomeli<fh>n</fh>ge<fh>n</fh> vnde vor vnse
+vorscr<fh>euene</fh> rike vnde lande ma<fh>n</fh>ne denere inwonere der lande vn<fh>de</fh> der stede
+alse De<fh>n</fh>marke<fh>n</fh> Swede<fh>n</fh>. vnde Norwege<fh>n</fh>. vn<fh>de</fh> dat hetogrike to Sleswik vn<fh>de</fh>
+dat land to Holste<fh>n</fh> vn<fh>de</fh> alle vnse la<fh>n</fh>de. vn<fh>de</fh> alle
+de vns<fh>en</fh> an beide<fh>n</fh> side<fh>n</fh> vn<fh>de</fh> wes wy nu an beide<fh>n</fh> siden in Sunder Iutla<fh>n</fh>de
+an vns<fh>en</fh> were<fh>n</fh> hebbe<fh>n</fh>. na iarschare<fh>n</fh>. vn<fh>de</fh> na der breue lude de dar upp
+spreke<fh>n</fh> vn<fh>de</fh> dar upp. geue<fh>n</fh> sind. vn<fh>de</fh> mit allem rechte als wi dat nu
+in vnse<fh>n</fh> were<fh>n</fh> hebbe<fh>n</fh> / to Koldinge. enes vredes an beide<fh>n</fh> side<fh>n</fh> eendrege<fh>n</fh>
+vnde wisse<fh>n</fh>t hebbe<fh>n</fh>. dede stae<fh>n</fh> scal. van nu an bet to sunte Iohan<fh>n</fh>is
+bapt<fh>ist</fh>en dage to middensom<fh>er</fh>e negest kome<fh>n</fh>de vortou<fh>er</fh> vyff iare<fh>n</fh> negest
+folghende . den wi holde<fh>n</fh> scole<fh>n</fh> vnde wille<fh>n</fh> an beide<fh>n</fh> side<fh>n</fh> to lande vnde
+to wat<fh>er</fh>e in aller wise als hir nascreu<fh>en</fh> steit ♦ Also dat wi edder nema<fh>n</fh>d in
+desse<fh>n</fh> vorben<fh>omeden</fh> riken vn<fh>de</fh> lande<fh>n</fh> man<fh>n</fh>e denere vnde inwon<fh>er</fh>e der lande.
+vn<fh>de</fh> der stede ghestlik vn<fh>de</fh> werlik. edder nema<fh>n</fh>d van vns<fh>e</fh>n als vorscr<fh>euen</fh>
+ys. scal den and<fh>er</fh>en bescheddege<fh>n</fh>. noch to lande noch to wat<fh>er</fh>e mit vengnisse
+mit roue mit bra<fh>n</fh>de mit deuerye mit morde noch mit vorretnisse. edder slote
+stede veste edder houe to slikende edder aff to wynnende\ ♦ Were ouer dat iema<fh>n</fh>d
+desse<fh>n</fh> vrede breke vn<fh>de</fh> nicht en helde bin<fh>n</fh>en desse<fh>n</fh> iaren als vorscr<fh>euen</fh>
+is dat got vorbede in dessen vorben<fh>omeden</fh> rike<fh>n</fh> vnde lande<fh>n</fh> van man<fh>n</fh>e<fh>n</fh>
+denere<fh>n</fh> edder inwon<fh>er</fh>en der stede vnde der lande he were we he were edder
+van welker side he were. vn<fh>de</fh> bi der schinbare<fh>n</fh> daet begrepe<fh>n</fh> wurde\ edder
+ock bekantnisse dede der missedat. an welkes here<fh>n</fh> lande dar dat schege
+van dessen vorben<fh>omeden</fh> here<fh>n</fh>. dar scal me<fh>n</fh> ouer de misdedere richte<fh>n</fh> als
+in deme lande een recht. is. dar se inne begrepe<fh>n</fh> edder beherdet werden. ♦
+Were ock dat iema<fh>n</fh>d missedat dede. an den stucke<fh>n</fh> als vorscreuen is vn<fh>de</fh>
+nicht begrepe<fh>n</fh> edder beherdet wurde bi der schinbare<fh>n</fh> daet. vn<fh>de</fh> deme
+misded<fh>ere</fh> vole daen wurde vnde de misdedere wor to vloge<fh>n</fh>. vnde efft se wor
+houet edder huset wurde<fh>n</fh>. bin<fh>n</fh>e<fh>n</fh> dessen vorben<fh>omeden</fh> rike<fh>n</fh> vn<fh>de</fh> lande<fh>n</fh> vnde
+steden. vn<fh>de</fh> de ghen<fh>n</fh>e de se houede edder husede den volg<fh>e</fh>ren edder den
+kleg<fh>er</fh>en de misded<fh>er</fh>e vore vnthelde edder vore bewerede edder ieneg<fh>er</fh>leie
+vordernisse edder hulpe dede lenger wen als em de missedat witlich gedan
+wurde. de se misdedere gedan hadde<fh>n</fh>. so scole wi vorben<fh>omet</fh> an beide<fh>n</fh> side<fh>n</fh>
+vn<fh>de</fh> wille<fh>n</fh> de ghene<fh>n</fh> de de misdedere houet edder huset edder hulpe edder
+vordernisse. deyt like sculdich holde<fh>n</fh> alse de misdedere. vn<fh>de</fh> dar ouer
+richte<fh>n</fh> als in deme lande een recht is. ♦ Were ock dat de ghene de de
+misdedere houede edder husede eer wol nicht enthelde edder bewerede den
+ghene<fh>n</fh> vore de volgh<fh>er</fh>e edder klegh<fh>er</fh>e were<fh>n</fh>. so scal doch de houer edder
+de huser. sik der missedat vntleddeghe<fh>n</fh>. so dat he der missedat rades
+vn<fh>de</fh> dades vn<fh>de</fh> medewetendes vn<fh>de</fh> nicht gevorderet hefft vnschuldich is alse
+in deme lande een recht is. dar de huser edder de houer ane beseten is. ♦
+W<fh>er</fh>e dat he des nicht en dede. so scal me<fh>n</fh> ene like schuldich holde<fh>n</fh> alse
+den misdeder vn<fh>de</fh> dar ouer richte<fh>n</fh> als in deme lande een recht is. ♦ Were
+ouer dat iema<fh>n</fh>d husede edder houede de desse missedat gedan hadde<fh>n</fh> edder ok
+sulue<fh>n</fh> de missedat dede als vorscr<fh>euen</fh> is. de so vaste besete<fh>n</fh> were dat de
+here nicht ouer em richte<fh>n</fh> konde dar he. vnder beseten were. sunder der
+and<fh>er</fh>en h<fh>er</fh>en hulpe vn<fh>de</fh> der la<fh>n</fh>de inwon<fh>er</fh>e so scal de here vn<fh>de</fh> de inwon<fh>er</fh>e
+de to der hulpe esschet werden truwelike<fh>n</fh> volghe<fh>n</fh>. vn<fh>de</fh> hulpe dar to duen
+vn<fh>de</fh> dar mede vore teen. vn<fh>de</fh> dar nicht aff ane ouer den sy gerichtet de de
+houet vn<fh>de</fh> huset hefft. edder de missedat sulue<fh>n</fh> gedan hefft. doch so vppe
+des h<fh>er</fh>en koste vn<fh>de</fh> scade<fh>n</fh> dar he vnder besete<fh>n</fh> is. de de missedat gedan
+hefft. ♦ Vn<fh>de</fh> w<fh>er</fh>et dat dar ieneghe slote edder la<fh>n</fh>de veste edder houe
+ouergewun<fh>n</fh>e<fh>n</fh> würden de vorwracht edder vorbroke<fh>n</fh> weren myt rechte. so scole<fh>n</fh>
+de slote lande veste vn<fh>de</fh> houe vorbroke<fh>n</fh> wesen. vn<fh>de</fh> vallen an den h<fh>er</fh>en
+dar se in syneme lande ligge<fh>n</fh>. doch so dat deme kleg<fh>er</fh>e. sin schade wedderlecht
+werde. vnde wes deme kleg<fh>er</fh>e böert mit rechte. ♦ Veret dat desse missedat we
+dede vn<fh>de</fh> de kleghere deme de schade gescheen were. edder iema<fh>n</fh>d deme
+misdedere volghede so scal. een iewelik de dar to geeschet wert deme klegere
+edder den volg<fh>er</fh>en truwelike<fh>n</fh> volghen vnde dar to behulpelich wesen dat me<fh>n</fh> dar
+ouer richte als in deme lande een recht is. ♦ Were ouer dat dar we to esschet
+würde vn<fh>de</fh> nicht en dede als vorscr<fh>euen</fh> is. den scal me<fh>n</fh> like schuldich holde<fh>n</fh>
+deme misded<fh>er</fh>e vnde dar ouer richten alse ouer den misdeder doch so dat me<fh>n</fh>
+den volghere<fh>n</fh> vor kost vnde vor scade<fh>n</fh> sta ♦ Were ock dat de kleghere edder
+volghere iema<fh>n</fh>de teghen dat em. also to secht were. als vorscr<fh>euen</fh> is.
+vn<fh>de</fh> dat he nicht truwelike<fh>n</fh> volget hadde. vn<fh>de</fh> de ghene dar neen to seghde
+deme des geteghe<fh>n</fh> wurde. de scal kome<fh>n</fh> vor de richt<fh>er</fh>e desses vredes de de
+heren an beide<fh>n</fh> side<fh>n</fh> dar to sette<fh>n</fh> vn<fh>de</fh> scal sik des entleddege<fh>n</fh> alse se segge<fh>n</fh>
+dat in deme lande een recht is dede he des nicht. so scal me<fh>n</fh> eme like deme
+misdedere schuldich holde<fh>n</fh>. ♦ Were ock dat iema<fh>n</fh>d bin<fh>n</fh>en dessen iare<fh>n</fh> als<fh>e</fh>
+vorscr<fh>euen</fh> is. slote edder stede veste edder houe sleke wun<fh>n</fh>e edder vorrede
+dar vns got vor beware. so scal vnser een deme andere<fh>n</fh> vn<fh>de</fh> de inwonere
+der vorben<fh>omeden</fh> rike vnde lande mit alle<fh>n</fh> truwe<fh>n</fh> dar to helpe<fh>n</fh> vn<fh>de</fh> dar
+mede vore teen vn<fh>de</fh> dar nicht aff. ane de ghen<fh>n</fh>e hebbe dat wedder deme yt
+aff gewun<fh>n</fh>e<fh>n</fh> ys vnde ouer de ghenne sy gerichtet de de missedat gedan hebbe<fh>n.</fh>
+doch so vppe des ghene<fh>n</fh> koste vn<fh>de</fh> schade<fh>n</fh> de se dar to esschet vn<fh>de</fh> des
+heren deme dat aff gewun<fh>n</fh>e<fh>n</fh> ys. ♦ Were ouer dat iema<fh>n</fh>d dess<fh>er</fh> vorben<fh>omeden</fh>
+missedat welk dede deme nene volghe dan wurde van klegh<fh>er</fh>en edder van iemande
+we den husede edder houede edder em hulpe<fh>n</fh> dede wetendes der
+missedat den scal me<fh>n</fh> like schuldich holden den misdedere<fh>n</fh>. vn<fh>de</fh> dar ouer
+richte<fh>n</fh> als in deme la<fh>n</fh>de een recht is. vn<fh>de</fh> efft dar iema<fh>n</fh>d mede beruchtet
+wurde edder beteghe<fh>n</fh> vn<fh>de</fh> he dar neen voreseghde de desse vorben<fh>omede</fh> husinge
+houunge edder hulpe scolde dan hebbe<fh>n</fh> de scal kome<fh>n</fh> vor de richtere desses
+vredes vn<fh>de</fh> scal sik des entleddege<fh>n</fh> alse de richtere seggen alse in deme
+lande een recht is. ♦ Were ock dat iema<fh>n</fh>d beruchtet edder beteghen würde myt
+missedat als mit vengnisse mit roue. mit brande mit deuerye mit morde mit
+vorretnisse mit veste edder höue to slikende edder eff to wynne<fh>n</fh>de dar vns
+got vor beware vn<fh>de</fh> dar neen schinbare daet edder bekanntnisse were.
+den scole<fh>n</fh> de richtere desses vredes voreladen. kumpt he vore vn<fh>de</fh> wil sik
+des entleddege<fh>n</fh> so scol he se des entleddegen alse de richtere des vredes seggen alse in deme lande een
+recht is vm<fh>m</fh>e de missedat dar he mede beruchtet edder beteghen is ♦ Were ock
+dat he nicht vore queme vn<fh>de</fh> entleddegede sik also alse vorscr<fh>euen</fh> is\
+so scolen ene. de richtere vorueste<fh>n</fh> vnde den<fh>n</fh>e vredeloes kundege<fh>n</fh>. we
+ene dar na husede edder houede edder ieneghe hulpe dede wan em de kundeginge
+der voruestinge witlich worde<fh>n</fh> were/ den scal me<fh>n</fh> so schuldich holde<fh>n</fh> alse
+den voruestede<fh>n</fh> man. alse in deme lande een recht is. ♦ Were ock dat iema<fh>n</fh>d
+dar mede beruchtet edder beteghen würde. de den voruestede<fh>n</fh> man. scolde huset
+houet edder em hulpe dan hebbe<fh>n</fh> na der tyd dat em de voruestinge witlich
+worde<fh>n</fh> were/ vn<fh>de</fh> dar neen schinbare dat edder bekantnisse were de scal kome<fh>n</fh>
+vor de richtere desses vredes vn<fh>de</fh> scal sik des entledege<fh>n</fh> alse se segge<fh>n</fh>
+dat in deme lande een recht is. kumpt he nicht vnde entleddeget sik alse
+vorscreuen is. so scal men ene also schuldich holde<fh>n</fh> alse den voruestede<fh>n</fh>
+man. ♦ Were ock dat ienich man mit dess<fh>er</fh> missedat vorrichtet vnde voruestet
+wurde alse vorscr<fh>euen</fh> is. vn<fh>de</fh> wech qweme vngehindert vte dessen vorben<fh>omeden</fh>
+rike<fh>n</fh> vnde lande<fh>n</fh>. so scal yt vm<fh>m</fh>e syn gued gan als in deme lande een recht
+is. vnde so scole wi vorben<fh>omede</fh> here<fh>n</fh> truwelike<fh>n</fh> vn<fh>de</fh> eendrachtlike<fh>n</fh> dar
+vm<fh>m</fh>e schriue<fh>n</fh> wor wi ene voresschen dar he vns vore entholde<fh>n</fh> wert. biddende.
+dat ma<fh>n</fh> ene vns nicht vore entholde men dat vns edder
+den vnse<fh>n</fh> moghe ouer em gerichtet werde<fh>n</fh>. weret dat vns des geweighert wurde
+vn<fh>de</fh> nicht ouer em gerichtet würde so scole wi vorben<fh>omede</fh> here<fh>n</fh> dar vmme to
+samende kome<fh>n</fh> edder vnsen truwe<fh>n</fh> raed an beide<fh>n</fh> siden darum<fh>m</fh>e to samende
+sende<fh>n</fh>. dar vm<fh>m</fh>e to spreke<fh>n</fh>de wo wi dat wedderstan willen dat vns vnse
+voruestede man vore entholden wert. vn<fh>de</fh> wes wi den<fh>n</fh>e edder vnse raed dar
+vm<fh>m</fh>e eendrachtlike<fh>n</fh> een werde<fh>n</fh> an beide<fh>n</fh> side<fh>n</fh> dat scole wi den<fh>n</fh>e an beide<fh>n</fh>
+siden truweliken holden vnde düen ♦ Were ock dat vns vorben<fh>omeden</fh> here<fh>n</fh>
+edder den vnsen an beide<fh>n</fh> side<fh>n</fh> van dess<fh>er</fh> vorscr<fh>euenen</fh> hulpe wegene. edder ock
+van richtendes wegene. desses vredes als<fh>e</fh> vorscr<fh>een</fh> is ieneghe veide edder
+vnwille aff vntstunde dar scole wi an beide<fh>n</fh> side<fh>n</fh> vnser een bi des andere<fh>n</fh>
+hulpe mit gantze<fh>n</fh> truwe<fh>n</fh> bliue<fh>n</fh>. so lange bet got helpet dat wi des ene<fh>n</fh>
+gantze<fh>n</fh> ende hebbe<fh>n</fh> an beide<fh>n</fh> siden ♦ Were ock dat welk krigh edder veide edder
+in welker made vpstoet schege in malkes lande edder dat he in were<fh>n</fh> hefft.
+van den synen so scal to newedder side vns<fh>er</fh> een deme andere<fh>n</fh> de misdedere
+vore vordegedingen edder vore entholden. edder houe<fh>n</fh> edder husen edder en
+behulpelich wese<fh>n</fh> binnen dessen voscreuenen vrede men vnser een scal deme
+andere<fh>n</fh> helpen ouer de misdedere in aller mate alse vorscr<fh>euen</fh> is. ♦
+Were ock dat welk dess<fh>er</fh> vorben<fh>omeden</fh> here<fh>n</fh> edder vrowe<fh>n</fh> ienick vorbot dede
+in deme syne<fh>n</fh> dat he in der were hefft dat schal me<fh>n</fh> also holden ♦ Were
+ouer dat welk dat vorbot breke. in wes lande edder gebede he breke dar scal
+he ane betere<fh>n</fh> als in deme lande een recht is vnde dar mede scal desse vrede
+nicht gebroke<fh>n</fh> edder gekrenket wesen. ♦ Vnde dessen vorben<fh>omede</fh> vrede vn<fh>de</fh> alle
+stucke vorscreuene scal me<fh>n</fh> holde<fh>n</fh> in aller wyse vn<fh>de</fh> also lange alse vorscr<fh>euen</fh>
+is. ♦ Vnde wi hebbe<fh>n</fh> newer mit dessem breue edder myt dessem vrede vnde nerge<fh>n</fh>
+mede vnse hulpere ouergheue<fh>n</fh> edder noch ouergeuen an beide<fh>n</fh> siden. se syn wor
+se syn. ♦ Desses vorscr<fh>eunen</fh> vredes richtere scholen wesen an beide<fh>n</fh> side<fh>n</fh>
+de ghene<fh>n</fh> de houetlude sind edder werde<fh>n</fh> vppe Gottorpe vn<fh>de</fh> vppe Plo{e}ne vn<fh>de</fh>
+vppe Koldinge vn<fh>de</fh> vppe Ripen ♦ Vn<fh>de</fh> desse vorben<fh>omeden</fh> richtere scole<fh>n</fh> to
+same<fh>n</fh>de komen twye in deme iare als vppe su<fh>n</fh>te Walburge<fh>n</fh> dage vn<fh>de</fh> vppe
+sunte Andreas dage to Flensborgh vnde eneme ieslike<fh>n</fh> richte<fh>n</fh> als vorscr<fh>euen</fh>
+is ♦ Weret ouer dat welk dess<fh>er</fh> vorben<fh>omeden</fh> richtere alsodane vorval hadde dat
+he van noet wegene dar vppe de vorscr<fh>euene</fh> tiid vnde ste nicht kome<fh>n</fh> konde so
+schal he. enen andere<fh>n</fh> in syne stede schicke<fh>n</fh> myt vuller macht to richtende
+alse he sulue<fh>n</fh> scholde duen\ ♦ Ock so scal de soone dar hertog Henrik van
+Lune<fh>n</fh>borg. hertog Iohan va<fh>n</fh> Mekelenborg hertog Wartzslaff von Stetyn. vnde
+her Baltazar here to Wenden an beiden siden to Flensborg vore gelouet hebben<K-ref noteid="1"/>.
+by vulle<fh>n</fh>komener macht bliuen vn<fh>de</fh> holden. doch so malk synes rechtes vnuorsumet
+an beid<fh>en</fh> siden. ♦ Ock so scal desse breff deme breue de gegeue<fh>n</fh> vn<fh>de</fh> besegelt
+wart to Koldinge nu in vns<fh>er</fh> vrowe<fh>n</fh> auende annunciacionis negest vorgan nerge<fh>n</fh>
+mede to hindere edder to schaden komen. vn<fh>de</fh> nerge<fh>n</fh> hir mede krenke<fh>n</fh> men de 
+vorscr<fh>euene</fh> breff scal by alle syner vulle<fh>n</fh>komener macht bliuen vn<fh>de</fh> holden.
+in allen artic<fh>u</fh>len vnde stucke<fh>n</fh> alse he vtwiset ♦ Alle desse vorscreuene<fh>n</fh>
+stucke vn<fh>de</fh> articule vn<fh>de</fh> een ieslik by sik lobe wy koni<fh>n</fh>g Erik vorben<fh>omet</fh>
+vn<fh>de</fh> vnse eruen vn<fh>de</fh> nakomelinge vn<fh>de</fh> wy hertogin<fh>n</fh>e Elizabeth vorben<fh>omet</fh>
+vn<fh>de</fh> vnse kinde<fh>re</fh> vn<fh>de</fh> vnse eruen vn<fh>de</fh> nakomelinge vnde wy greue Henrik
+vorben<fh>omet</fh> vnde vnse eru<fh>en</fh> vn<fh>de</fh> nakomelinge. stede vn<fh>de</fh> vast to holdende
+vnser een deme andere<fh>n</fh> in guden truwe<fh>n</fh> in aller wise alse vorscr<fh>euen</fh> is.
+sunder ienegherleie hulperede edder argelist. vnde wi nascreuen<fh>en</fh> louere
+vppe des vorben<fh>omeden</fh> koni<fh>n</fh>g Erikes siden alse Peter. ertzebiscop to Lunden.
+Peter bisscop to Roskilde Peter biscop to Ripe<fh>n</fh>e Boo. biscop to Arhusen.
+Iohan biscop to Sleswik. Ienes biscop to Odhense/ Laghe biscop to Wi<fh>or</fh>rgh
+Peter biscop to Wendesusel/ Ienes Duue Thure Beentson. Algoth Magnusson.
+Folmar Ieepss<fh>on</fh>. Vicke van Vitzen. Niels Ywarss<fh>on</fh> Thomas van Vitze<fh>n</fh>.
+Iohan Olafs<fh>on</fh>. Erik V<fh>m</fh>mereise. Anders Ieepss<fh>on</fh>. Niels Booss<fh>on</fh> Biørn
+Olafs<fh>on</fh>. Beent Steenss<fh>on</fh>. Iohan Scharpenberg Godscalk Beentss<fh>on</fh> Ieep
+Truwelss<fh>on</fh>. Boo Steenss<fh>on</fh> Erik Nielss<fh>on</fh> Thure Steenss<fh>on</fh>. Niels
+Strangess<fh>on</fh>. Knuth Bunde. Peter Magnuss<fh>on</fh>. Endrith Erlandss<fh>on</fh>. Niels
+Krabbe/ Otte Mychelstorp Ioon Litlæ. Giordh Giordss<fh>on</fh> Laurens Hwas
+Halworth Findess<fh>on</fh>. Ienes Nielss<fh>on</fh> van Awenzberge Crist<fh>er</fh>n Schram.
+Thruet Hasse. Ienes Schram. Stigh Peterss<fh>on</fh>. Swen Vdss<fh>on</fh>. Niels Swenss<fh>on</fh>
+Stigh Mu<fh>n</fh>k. Niels Brok Ienes Eskilss<fh>on</fh> Henrik Ienss<fh>on</fh> Iohan Thomess<fh>on</fh>.
+Ioon Bing. Luder Cabolt. Berneke Schinkel\ Waldemar Bydelsbach Christ<fh>er</fh>n
+Friis. Niels Ienss<fh>on</fh> van Tange riddere Clawes Lembeke Herme<fh>n</fh> van Vitze<fh>n</fh>
+Luder Lembeke Knwt Beentss<fh>on</fh> Olaff Hakenss<fh>on</fh> knapen ♦ Vnde wi nascreuen
+louere vppe der vorben<fh>omeden</fh> hertoginne<fh>n</fh> Elizabeth vnde erer kindere vnde greue<fh>n</fh>
+Henrikes siden. alse. Iohan bisscop to Lubeke/ Erik Kru<fh>m</fh>medik Otte Seestede.
+Luder Storm Wulff Pogwisch de iunghere. Otte vam<fh>m</fh>e Knope Tun<fh>n</fh>e Rønnowe Syuerd
+Seestede. B<fh>e</fh>n<fh>e</fh>dictus van Aneuelde Reymer Seestede. Hartwich Heeste<fh>n</fh>. Iohan
+Rantzowe Otte Wilberg. Clawes van Boekwolde Herding Stake Marquard van Siggem.
+Detleff Rixstorp\ Schakke Rantzowe/ Pawel Breyde. Iohan Stake. Laurens Heesten
+Nicol<fh>aus</fh> Swaff. Bertr<fh>a</fh>m Heesten Detleff van Aneuelde riddere\ Henneke Tralowe
+Bertr<fh>a</fh>m Sabele/ He<fh>n</fh>neke Stake her Herdingessone Iohan Hum<fh>m</fh>ersbutel. Ludeke van
+Boekwolde Henrik Alwerstorp. Woldemar Breyde to Zaghowe Hinrik Brochtorp
+Clawessone. Volrad van Bockwolde Marquard va<fh>n</fh> Sigge<fh>m</fh> Marquard va<fh>n</fh> Quale<fh>n</fh>
+Marquard Stake. Keye Rantzowe de iunghe Henrik va<fh>n</fh> Stöwe. Emeke Ratlowe
+Otte Ratlowe Luder Langelowe to Seldorp Borchard Kru<fh>m</fh>medik\ Henrik Rantzowe
+her Godsca&lt;l&gt;kessone Godscalk Rantzowe/ her Godscalkessone He<fh>n</fh>neke Ratlowe
+Clawes Rauen Detleff Walstorp Clawes Ascheberg Henrik Kule Eggerd Gørse.
+Marquard Breide de iunger<fh>e</fh> Otte Meynerstorp Clawes va<fh>n</fh> Tynen vnde He<fh>n</fh>neke
+Dosenrode knapen ♦ Wy alle vorscreuene louen alle desse vorscr<fh>euene</fh> artic<fh>u</fh>le
+vnde stucke een iewelik vor sik vn<fh>de</fh> des he mechtich is. vn<fh>de</fh> vor alle de
+vm<fh>m</fh>e sine<fh>n</fh> willen duen vnde laten willen an beiden siden. vnser een deme
+anderen in guden truwe<fh>n</fh> stede vn<fh>de</fh> vast to holdende in aller wyse alse
+vorscr<fh>euen</fh> is. sunder ienegerleie hulperede edder arghelist. vnde weret dat
+iema<fh>n</fh>d were van dessen vorscr<fh>euenen</fh> löueren de dar v<fh>m</fh>me gebeden wurde dat
+he dessen breff besegelen scholde. vn<fh>de</fh> ene de<fh>n</fh>ne nicht besegelen wolde. de
+scal vorvestet wesen. alse efft he dess<fh>er</fh> missedat welk gedan hadde de hir
+vorescreue<fh>n</fh> staen ♦ Vnde to groterer bewar<fh>i</fh>nge vn<fh>de</fh> sekercheit alle desser
+vorscr<fh>euenen</fh> stucke so hebbe wy koni<fh>n</fh>g Erik hertogi<fh>n</fh>ne Elizabeth vnde greue
+Henrik vorbenomed<fh>en</fh>. vnde wy vorscreuen<fh>en</fh> louere an beiden siden vnse
+ingesegele myt willen vn<fh>de</fh> mit widscop gehenget laten an dessen breff ♦
+De gegeue<fh>n</fh> vnde gescr<fh>euen</fh> is to Koldinge na godes boert dusend iar veerhundert
+iar in deme elfften iare dar na vnser leuen vrowen dage annunciacionis\
+</KONTRAKT></STAT></KONGELIG></ERKLAERING>
+</SPALTE>
+	</TEKST>
+	<NOTER>
+		<KRIT noteid="1">
+			<OPL>
+				<fh>Cf. nr. 137.</fh>
+			</OPL>
+		</KRIT>
+	</NOTER>
+</DIPLOM>
