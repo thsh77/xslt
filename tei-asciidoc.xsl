@@ -97,7 +97,17 @@ include::sections/<xsl:value-of select="$sectionNumber"/>/<xsl:value-of select="
   </xsl:template>
 
   <xsl:template match="tei:p">
-    <xsl:apply-templates/>
+    <xsl:apply-templates/><xsl:text>      
+
+</xsl:text>
+  </xsl:template>
+  
+  <xsl:template match="tei:hi">
+    <xsl:choose>
+      <xsl:when test="@rend='italics'">
+        _<xsl:value-of select="."/>_
+      </xsl:when>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="tei:app">
