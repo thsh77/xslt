@@ -34,8 +34,9 @@ v0.1
   <xsl:variable name="chapterNumber">
     <xsl:number format="001"/>
   </xsl:variable>
-include::book/chapters/<xsl:value-of select="$chapterNumber"/>/<xsl:value-of select="$chapterNumber"/>.asc[]
-  
+<xsl:value-of>include::book/chapters/<xsl:value-of select="$chapterNumber"/>/<xsl:value-of select="$chapterNumber"/>.asc[]
+
+</xsl:value-of>  
 </xsl:for-each>
     </xsl:result-document>
   </xsl:template>
@@ -47,26 +48,44 @@ include::book/chapters/<xsl:value-of select="$chapterNumber"/>/<xsl:value-of sel
   </xsl:template>
 
 
+<!-- Match a chapter -->
   <xsl:template match="tei:body/tei:div">
-    <xsl:variable name="chapterNumber">
+    <xsl:variable name="chapterNumberFiles">
       <xsl:number format="001"/>
     </xsl:variable>
-    <xsl:variable name="file" select="concat($chapterNumber, '.asc')"/>
-    <xsl:result-document href="book/chapters/{$chapterNumber}/{$file}">
+    <xsl:variable name="chapterNumber">
+      <xsl:number/>
+    </xsl:variable>
+    <xsl:variable name="file" select="concat($chapterNumberFiles, '.asc')"/>
+    <xsl:result-document href="book/chapters/{$chapterNumberFiles}/{$file}">
       <xsl:choose>
-        <xsl:when test="tei:head">== <xsl:value-of select="tei:head"/><xsl:text>&#xa;</xsl:text>
+        <xsl:when test="tei:head">
+          <xsl:value-of>[_<xsl:value-of select="$chapterNumber"/>]
+== <xsl:value-of select="tei:head"/></xsl:value-of>
         </xsl:when>
         <xsl:otherwise>
+<xsl:value-of>[_<xsl:value-of select="$chapterNumber"/>]
 == <xsl:value-of select="$chapterNumber"/>
+
+</xsl:value-of>
         </xsl:otherwise>
       </xsl:choose>
-      <xsl:for-each select="tei:div">
-        <xsl:variable name="sectionNumber">
-          <xsl:number format="001"/>
-        </xsl:variable>
-include::sections/<xsl:value-of select="$sectionNumber"/>/<xsl:value-of select="$sectionNumber"/>.asc[]
-      
-      </xsl:for-each>
+     <xsl:choose>
+<!-- If there text directly below body/div, make one section -->
+        <xsl:when test="tei:p">
+include::sections/001.asc[]
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:for-each select="tei:div">
+            <xsl:variable name="sectionNumber">
+              <xsl:number format="001"/>
+            </xsl:variable>
+<xsl:value-of>
+
+include::sections/<xsl:value-of select="$sectionNumber"/>.asc[]</xsl:value-of>
+          </xsl:for-each>
+        </xsl:otherwise>
+      </xsl:choose>
       <xsl:apply-templates select="tei:div"/>
     </xsl:result-document>
   </xsl:template>
@@ -75,14 +94,20 @@ include::sections/<xsl:value-of select="$sectionNumber"/>/<xsl:value-of select="
     <xsl:apply-templates/>
   </xsl:template>
 
-  <xsl:template match="tei:div/tei:div">
+<!--Handle a native section-->
+  <xsl:template match="tei:body/tei:div/tei:div">
     <xsl:variable name="chapterNumber">
       <xsl:number count="tei:body/tei:div" format="001"/>
     </xsl:variable>
-    <xsl:variable name="sectionNumber">
+    <!-- This is for folder and file names -->
+    <xsl:variable name="sectionNumberFiles">
       <xsl:number format="001"/>
     </xsl:variable>
-    <xsl:result-document  href="book/chapters/{$chapterNumber}/sections/{$sectionNumber}/{$sectionNumber}.asc">
+    <!-- This is for numbering sections in text -->
+    <xsl:variable name="sectionNumber">
+      <xsl:number format="1"/>
+    </xsl:variable>
+    <xsl:result-document  href="book/chapters/{$chapterNumber}/sections/{$sectionNumberFiles}.asc">
       <xsl:choose>
         <xsl:when test="tei:head">
           <xsl:value-of select="."/>
@@ -96,12 +121,27 @@ include::sections/<xsl:value-of select="$sectionNumber"/>/<xsl:value-of select="
     </xsl:result-document>
   </xsl:template>
 
-  <xsl:template match="tei:p">
-    <xsl:apply-templates/><xsl:text>      
+<!-- Make a section if there's only text beneath body/div -->
+<xsl:template match="tei:body/tei:div[tei:p]">
+  <xsl:variable name="chapterNumber">
+    <xsl:number count="tei:body/tei:div" format="001"/>
+  </xsl:variable>
+  <xsl:result-document href="book/chapters/{$chapterNumber}/sections/001.asc">
+<xsl:text>
+[_1]
+=== 1
 
 </xsl:text>
-  </xsl:template>
+<xsl:apply-templates select="tei:p"/>
+  </xsl:result-document>
+</xsl:template>
+
+<xsl:template match="tei:p">
+  <xsl:apply-templates/>
   
+  
+</xsl:template>
+
   <xsl:template match="tei:hi">
     <xsl:choose>
       <xsl:when test="@rend='italics'">
