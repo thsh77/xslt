@@ -132,14 +132,12 @@ include::sections/<xsl:value-of select="$sectionNumber"/>.asc[]</xsl:value-of>
 === 1
 
 </xsl:text>
-<xsl:apply-templates select="tei:p"/>
+    <xsl:apply-templates select="tei:p"/><xsl:text>&#xa;</xsl:text>
   </xsl:result-document>
 </xsl:template>
 
 <xsl:template match="tei:p">
   <xsl:apply-templates/>
-  
-  
 </xsl:template>
 
   <xsl:template match="tei:hi">
