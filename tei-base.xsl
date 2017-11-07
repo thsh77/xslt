@@ -32,7 +32,7 @@
         <xsl:for-each select="//tei:div[tei:head]">
           <!-- Extract page number from current section -->
           <xsl:variable name="work-dir">
-            <xsl:value-of select="replace(tei:body/tei:div/tei:head//text(), ' ', '-')"/>
+            <xsl:value-of select="replace(../../../tei:head/lower-case(string()), ' ', '-')"/>
           </xsl:variable>
           <xsl:variable name="from-page" select=".//tei:pb/@n"/>
           <xsl:variable name="author-dir">
@@ -42,7 +42,7 @@
           </xsl:variable>
           <xsl:variable name="work-title">
             <xsl:value-of
-              select="lower-case(replace((tei:body/tei:head/normalize-space(text()[position() = 1])), ' ', '-'))"
+              select="lower-case(replace((tei:head/normalize-space(substring(., 1, 20))), ' ', '-'))"
             />
           </xsl:variable>
           <xsl:result-document href="{$author-dir}/{$work-dir}/{$work-title}_{generate-id()}.xml">
