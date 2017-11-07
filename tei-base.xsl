@@ -29,8 +29,7 @@
       </xsl:variable>
       <xsl:for-each select="tei:div[starts-with(@xml:id, 'workid')]">
         <!-- Extract page number from current section -->
-        <xsl:variable name="from-page" select="tei:div//tei:pb/@n"/>          
-        
+        <xsl:variable name="from-page" select=".//tei:pb/@n"/>
         <xsl:variable name="author-dir">
           <xsl:value-of
             select="lower-case(concat(//tei:sourceDesc//tei:author//tei:surname, '_', //tei:sourceDesc//tei:author//tei:forename))"
@@ -73,10 +72,12 @@
                     <witness xml:id="A">empty</witness>
                   </listWit>
                   <listBibl>
-                    <xsl:copy-of select="//tei:sourceDesc/tei:bibl"/>
-                    <xsl:value-of>
-                      <xsl:value-of select="$from-page"/>
-                    </xsl:value-of>
+                    <bibl>
+                      <xsl:copy-of select="//tei:sourceDesc/tei:bibl/*"/>
+                      <biblScope>
+                        <xsl:value-of select="$from-page"/>
+                      </biblScope>
+                    </bibl>
                   </listBibl>
                 </sourceDesc>
               </fileDesc>
